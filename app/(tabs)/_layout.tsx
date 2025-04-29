@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
 import { images } from '@/constants/images';
-import { Image, Text, View } from 'react-native';
+import { Image, ImageBackground, Text, View } from 'react-native';
 import { icons } from '@/constants/icons';
 
 const TabIcon = ({focused, icon, title}: any) => {
@@ -9,7 +9,7 @@ const TabIcon = ({focused, icon, title}: any) => {
   return (
     <ImageBackground
       source={images.highlight}
-      className="flex flex-row w-full flex-1 min-w-[112px] min-h-16 mt-4 justify-center items-center rounded-full overflow-hidden"
+      className="flex flex-row w-full flex-1 min-w-[112px] min-h-12 mt-3 justify-center items-center rounded-full overflow-hidden"
     >
       <Image source={icon} tintColor="#151312" className="size-5" />
       <Text className="text-secondary text-base font-semibold ml-2">{title}</Text>
@@ -20,7 +20,7 @@ const TabIcon = ({focused, icon, title}: any) => {
     <View className='size-full justify-center items-center mt-4 rounded-full'>
       <Image
         source={icon}
-        tintColor:"#A8B5DB"
+        style={{ tintColor: '#A8B5DB' }}
         className="size-5"
       />
    
@@ -31,9 +31,9 @@ const TabIcon = ({focused, icon, title}: any) => {
 const _Layout = () => {
   return (
     <Tabs 
-      secreenOptions={{
+      screenOptions={{
         tabBarShowLabel: false,
-        tabBarItemsStyle:{
+        tabBarItemStyle:{
           width: '100%',
           height: '100%',
           justifyContent: 'center',
@@ -88,7 +88,7 @@ const _Layout = () => {
           title: 'Profile',
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.person} title="Home" />
+            <TabIcon focused={focused} icon={icons.person} title="Profile" />
           ),
         }}
       />
