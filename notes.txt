@@ -1,0 +1,20 @@
+npx create-expo-app@latest .
+npm run reset-project
+npx expo start
+
+npm install nativewind tailwindcss react-native-reanimated react-native-safe-area-context
+npx tailwindcss init
+
+npx expo customize metro.config.js
+
+npx expo start --clear
+
+npx expo install react-native-appwrite react-native-url-polyfill
+
+npm i @react-native-masked-view/masked-view
+
+npm install --global eas-cli
+
+eas login
+
+eas build -p android --profile preview

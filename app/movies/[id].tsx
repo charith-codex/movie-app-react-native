@@ -54,13 +54,13 @@ const Details = () => {
             resizeMode="stretch"
           />
 
-          <TouchableOpacity className="absolute bottom-5 right-5 rounded-full size-14 bg-white flex items-center justify-center">
+          {/* <TouchableOpacity className="absolute bottom-5 right-5 rounded-full size-14 bg-white flex items-center justify-center">
             <Image
               source={icons.play}
               className="w-6 h-7 ml-1"
               resizeMode="stretch"
             />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
 
         <View className="flex-col items-start justify-center mt-5 px-5">
@@ -113,7 +113,7 @@ const Details = () => {
         </View>
       </ScrollView>
 
-      <TouchableOpacity
+      {/* <TouchableOpacity
         className="absolute bottom-5 left-0 right-0 mx-5 bg-accent rounded-lg py-3.5 flex flex-row items-center justify-center z-50"
         onPress={router.back}
       >
@@ -123,7 +123,7 @@ const Details = () => {
           tintColor="#fff"
         />
         <Text className="text-white font-semibold text-base">Go Back</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 };
