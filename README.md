@@ -1,7 +1,7 @@
 <h1 align="center">🎬 Full Stack React Native Movie App with Appwrite & Expo</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/58f9a53b-9c12-4f86-bcd7-3de3b8618010" alt="App Screenshot" />
+![react native movie app (2)](https://github.com/user-attachments/assets/6e02c82f-41b1-497d-b598-f38919e06554)
 </p>
 
 ## 🚀 Features
